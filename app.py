@@ -131,7 +131,7 @@ if user_input := st.chat_input("Ask a Linux terminal or architecture question...
                     {"role": "user", "content": user_payload}
                 ],
                 max_tokens=350,
-                temperature=0.0
+                temperature=0.2
             )
             
             raw_response = completion.choices[0].message.content
